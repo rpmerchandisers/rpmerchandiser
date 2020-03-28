@@ -1,15 +1,15 @@
 ---
-title: Golden
-subtitle: Website Design
+title: SAMBA RICE    
+title1: – 1st Grade
+subtitle: சம்பா அரிசி
 layout: default
 modal-id: 3
 date: 2014-07-16
-img: golden.png
-thumbnail: golden-thumbnail.png
+img: Samba-rice.jpg
+thumbnail: Samba-rice-thumbnail.jpg
 alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
+project-date: Rs. 2000
+client: Rs. 80
 category: Web Development
-description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
-
+description: சம்பா அரிசி– 1st Grade
 ---

@@ -1,5 +1,5 @@
 ---
-title: RAJABOGAM PONNI – 1STCLASS
+title: RAJABOGAM PONNI – 1st Grade
 subtitle: ராஜபோகம் பொன்னி
 layout: default
 modal-id: 1
@@ -10,6 +10,6 @@ alt: image-alt
 project-date: Rs. 1450
 client: Rs. 58
 category: Web Development
-description: ராஜபோகம் பொன்னி  – 1STCLASS
+description: ராஜபோகம் பொன்னி  – 1st Grade
 
 ---
