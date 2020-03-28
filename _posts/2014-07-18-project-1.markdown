@@ -1,15 +1,15 @@
 ---
-title: Dreams
-subtitle: Website Design
+title: RAJABOGAM PONNI – 1STCLASS
+subtitle: ராஜபோகம் பொன்னி
 layout: default
 modal-id: 1
 date: 2014-07-18
-img: dreams.png
-thumbnail: dreams-thumbnail.png
+img: rajabogam-ponni.jpg
+thumbnail: rajabogam-ponni-thumbnail.jpg
 alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
+project-date: Rs. 1450
+client: Rs. 58
 category: Web Development
-description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
+description: ராஜபோகம் பொன்னி  – 1STCLASS
 
 ---
