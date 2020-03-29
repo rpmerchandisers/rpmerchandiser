@@ -17,9 +17,7 @@ $(function() {
             if (firstName.indexOf(' ') >= 0) {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
-
-
-                      $.ajax({
+            $.ajax({
                 url: "././mail/contact_me.php",
                 type: "POST",
                 data: {
@@ -40,9 +38,23 @@ $(function() {
                         .append('</div>');
 
                     //clear all fields
-                    $('#contactForm').trigger("reset");
-                    $('#sumbitbtn').disabled = true;
+
+
                 },
+                error: function() {
+                    // Fail message
+                    document.getElementById("contactForm").addEventListener("submit", function(event){
+                        event.preventDefault();
+                        SendEmail();
+                        alert('Done!');
+                        setTimeout(function(){
+                          window.location = "/";
+                         }, 3000);
+
+                    });
+                    document.getElementById('submitbtn').disabled=true;
+                    $('#contactForm').trigger("reset");
+                  },
             })
         },
         filter: function() {
@@ -55,13 +67,6 @@ $(function() {
         $(this).tab("show");
     });
 });
-
-/*
-function myFunction() {
-  document.addEventListener("DOMContentLoaded", function(event) {
-  document.getElementById("submitbtn").disabled = true;
-  });
-};
 
 function SendEmail() {
     // API: https://www.emailjs.com/
@@ -78,12 +83,11 @@ function SendEmail() {
   document.getElementById("contactForm").addEventListener("submit", function(event){
       event.preventDefault();
       SendEmail();
-      myFunction();
       setTimeout(function(){
-        ;
+        // window.location = "/";
        }, 3000);
        //alert('Done!');
-  });   */
+  });
 
 /*When clicking on Full hide fail/success boxes */
 $('#name').focus(function() {
