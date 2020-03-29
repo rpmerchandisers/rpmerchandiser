@@ -17,7 +17,9 @@ $(function() {
             if (firstName.indexOf(' ') >= 0) {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
-            $.ajax({
+
+
+                      $.ajax({
                 url: "././mail/contact_me.php",
                 type: "POST",
                 data: {
@@ -39,16 +41,7 @@ $(function() {
 
                     //clear all fields
                     $('#contactForm').trigger("reset");
-                },
-                error: function() {
-                    // Fail message
-                    $('#success').html("<div class='alert alert-danger'>");
-                    $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-                        .append("</button>");
-                    $('#success > .alert-danger').append("<strong>Sorry " + firstName + ", it seems that my mail server is not responding. Please try again later!");
-                    $('#success > .alert-danger').append('</div>');
-                    //clear all fields
-                    $('#contactForm').trigger("reset");
+                    $('#sumbitbtn').disabled = true;
                 },
             })
         },
@@ -63,6 +56,34 @@ $(function() {
     });
 });
 
+/*
+function myFunction() {
+  document.addEventListener("DOMContentLoaded", function(event) {
+  document.getElementById("submitbtn").disabled = true;
+  });
+};
+
+function SendEmail() {
+    // API: https://www.emailjs.com/
+    emailjs.send("gmail", "template_AdSXQfNh",
+      {
+        name: document.getElementById("name").value,
+        message: document.getElementById("message").value,
+        email: document.getElementById("email").value,
+        phone: document.getElementById("phone").value
+      }
+      );
+  }
+
+  document.getElementById("contactForm").addEventListener("submit", function(event){
+      event.preventDefault();
+      SendEmail();
+      myFunction();
+      setTimeout(function(){
+        ;
+       }, 3000);
+       //alert('Done!');
+  });   */
 
 /*When clicking on Full hide fail/success boxes */
 $('#name').focus(function() {

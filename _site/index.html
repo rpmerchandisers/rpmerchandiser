@@ -29,6 +29,18 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <!-- email api -->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script type="text/javascript">
+   (function(){
+      emailjs.init("user_PTu0T9yNbXqS6i4EsUKrY");
+   })();
+    </script>
+
+
+
+
 </head>
 
 
@@ -507,13 +519,15 @@
                             <div class="clearfix"></div>
                             <div class="col-lg-12 text-center">
                                 <div id="success"></div>
-                                <button type="submit" class="btn btn-xl">Send Message</button>
+                                <button type="submit" class="btn btn-xl" value="Send" id="submitbtn" name="submit" onclick="myFunction()">Send Message</button>
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
+
+
     </section>
 
       <footer>
