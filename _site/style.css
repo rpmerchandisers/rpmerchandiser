@@ -640,6 +640,25 @@ section h3.section-subheading {
     }
 }
 
+.banner-pic {
+    background: url('/img/asset.png') center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    padding: 240px 0px !important;
+}
+.quality {
+margin-top: -200px !important;
+}
+.quality span {
+    background-color: #000;
+    opacity: 0.7;
+    margin-left: 30px;
+    padding:15px;
+    color:#ffffff;
+    text-transform:none !important;
+}
 .team-member {
     margin-bottom: 50px;
     text-align: center;
